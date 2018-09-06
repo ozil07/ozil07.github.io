@@ -1,0 +1,719 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
+/* line 7, ../sass/util/_typog.scss */
+* {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+/* line 11, ../sass/util/_typog.scss */
+.h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* line 16, ../sass/util/_typog.scss */
+.h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 22px;
+}
+
+/* line 22, ../sass/util/_typog.scss */
+.h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* line 28, ../sass/util/_typog.scss */
+.p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 35, ../sass/util/_typog.scss */
+  .h1 {
+    font-size: 29.666px;
+  }
+}
+/* line 1, ../sass/util/_btn.scss */
+.btn {
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 12px 23px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* line 1, ../sass/block/_skippr.scss */
+.skippr {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/block/_skippr.scss */
+.skippr > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 62.5%;
+}
+
+/* line 17, ../sass/block/_skippr.scss */
+.skippr > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 29, ../sass/block/_skippr.scss */
+.skippr-nav-container {
+  position: absolute;
+  left: 0;
+  bottom: 42px;
+  width: 100%;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* line 46, ../sass/block/_skippr.scss */
+.skippr-nav-element {
+  cursor: pointer;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+  background-image: url(../img/dot.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 7px;
+}
+
+/* line 56, ../sass/block/_skippr.scss */
+.skippr-nav-element-bubble {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+/* line 63, ../sass/block/_skippr.scss */
+.skippr-nav-element-block {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* line 70, ../sass/block/_skippr.scss */
+.skippr-nav-element-block:last-child {
+  margin-right: 0;
+}
+
+/* line 75, ../sass/block/_skippr.scss */
+.skippr-nav-element:hover, .skippr-nav-element-active {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+/* line 80, ../sass/block/_skippr.scss */
+.skippr-arrow {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  width: 30px;
+  height: 30px;
+  /*background-color: white;*/
+  transform-origin: center center;
+  -webkit-transform-origin: top left;
+  cursor: pointer;
+}
+
+/* line 97, ../sass/block/_skippr.scss */
+.skippr-previous {
+  left: 2.5%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+/* line 105, ../sass/block/_skippr.scss */
+.skippr-next {
+  right: 3.5%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+/* line 4, ../sass/block/_header.scss */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* line 11, ../sass/block/_header.scss */
+header .navigation {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+/* line 22, ../sass/block/_header.scss */
+header .logo {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 39px 0;
+}
+/* line 29, ../sass/block/_header.scss */
+header li {
+  list-style: none;
+  padding: 0;
+  margin: 0 40px 0 0;
+}
+/* line 33, ../sass/block/_header.scss */
+header li:last-child {
+  margin: 0;
+}
+/* line 37, ../sass/block/_header.scss */
+header li a {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  left: 0;
+  top: -4px;
+}
+
+/* line 1, ../sass/block/_slider.scss */
+.carousel__container {
+  height: 560px;
+}
+
+/* line 6, ../sass/block/_slider.scss */
+#carousel > div {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  background-size: cover;
+  background-position: 50% 30%;
+  text-align: center;
+}
+/* line 22, ../sass/block/_slider.scss */
+#carousel h1 {
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 70px;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* line 31, ../sass/block/_slider.scss */
+#carousel p {
+  font-size: 25px;
+  font-weight: 300;
+}
+/* line 36, ../sass/block/_slider.scss */
+#carousel a {
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 12px 23px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #709dca;
+  color: #fff;
+  position: relative;
+  top: 72px;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 55, ../sass/block/_slider.scss */
+  #carousel h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  /* line 60, ../sass/block/_slider.scss */
+  #carousel p {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
+/* line 1, ../sass/block/_offer.scss */
+.offer {
+  padding-top: 85px;
+}
+/* line 4, ../sass/block/_offer.scss */
+.offer h2 {
+  text-transform: uppercase;
+  color: #709dca;
+  text-align: center;
+}
+/* line 10, ../sass/block/_offer.scss */
+.offer > h3 {
+  text-align: center;
+  margin-bottom: 82px;
+}
+/* line 15, ../sass/block/_offer.scss */
+.offer .offer__item {
+  margin-bottom: 55px;
+}
+/* line 18, ../sass/block/_offer.scss */
+.offer .offer__item img {
+  float: left;
+  margin-right: 20px;
+}
+/* line 23, ../sass/block/_offer.scss */
+.offer .offer__item .offer__description {
+  overflow: hidden;
+}
+/* line 27, ../sass/block/_offer.scss */
+.offer .offer__item h3 {
+  color: #394b50;
+  font: 700 16px/22px Open Sans, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 34, ../sass/block/_offer.scss */
+.offer .offer__item p {
+  color: #7b7b7b;
+  font: 13px/22px Open Sans, Helvetica, Arial, sans-serif;
+}
+
+/* line 1, ../sass/block/_aboutus.scss */
+.aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+/* line 6, ../sass/block/_aboutus.scss */
+.aboutus .aboutus__img {
+  background: #fff url(../img/aboutus.jpg) 50% 50%/cover no-repeat;
+}
+/* line 10, ../sass/block/_aboutus.scss */
+.aboutus .aboutus__desc {
+  background-color: #ffc155;
+  color: #fff;
+  padding: 81px 150px 81px 94px;
+}
+/* line 15, ../sass/block/_aboutus.scss */
+.aboutus .aboutus__desc h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/* line 20, ../sass/block/_aboutus.scss */
+.aboutus .aboutus__desc p {
+  margin-bottom: 30px;
+  font: 13px/24px Open Sans, Helvetica, Arial, sans-serif;
+}
+/* line 25, ../sass/block/_aboutus.scss */
+.aboutus .aboutus__desc .btn {
+  margin-top: 80px;
+  background-color: #e7ad48;
+  border: 1px solid #cb8d21;
+  color: #fff;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 35, ../sass/block/_aboutus.scss */
+  .aboutus .aboutus__desc {
+    padding: 40px 20px;
+  }
+  /* line 38, ../sass/block/_aboutus.scss */
+  .aboutus .aboutus__desc .btn {
+    margin-top: 40px;
+  }
+}
+/* line 2, ../sass/block/_works.scss */
+.works h2 {
+  margin-top: 105px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #709dca;
+}
+/* line 9, ../sass/block/_works.scss */
+.works h3 {
+  color: #062033;
+}
+/* line 13, ../sass/block/_works.scss */
+.works .row {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* line 18, ../sass/block/_works.scss */
+.works .row img {
+  width: 224px;
+  height: 21px;
+  display: inline-block;
+  float: none;
+  margin: 20px auto 30px auto;
+}
+/* line 26, ../sass/block/_works.scss */
+.works .row .works__filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+/* line 34, ../sass/block/_works.scss */
+.works .row .works__filter li {
+  list-style: none;
+  margin-right: 40px;
+}
+/* line 39, ../sass/block/_works.scss */
+.works .row .works__filter .is-checked {
+  background-color: #709dca;
+  color: #fff;
+}
+/* line 44, ../sass/block/_works.scss */
+.works .row .works__filter button {
+  background-color: transparent;
+  color: #709dca;
+  font: 400 15px Open Sans, Helvetica, Arial, sans-serif;
+  transition: all .2s;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+/* line 54, ../sass/block/_works.scss */
+.works .row .works__filter button:hover {
+  background-color: #709dca;
+  color: #fff;
+}
+/* line 64, ../sass/block/_works.scss */
+.works .works__all {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 68, ../sass/block/_works.scss */
+.works .works__all div {
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 75, ../sass/block/_works.scss */
+.works .works__all .work__item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+/* line 86, ../sass/block/_works.scss */
+.works .works__all .work__item:hover .work__desc {
+  opacity: 0.9;
+}
+/* line 90, ../sass/block/_works.scss */
+.works .works__all .work__desc {
+  height: 282px;
+  opacity: 0;
+  background-color: #ffc155;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  transition: all .2s;
+}
+/* line 110, ../sass/block/_works.scss */
+.works .works__all .work__desc span {
+  box-shadow: 0 0 0 1px #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* line 122, ../sass/block/_works.scss */
+.works .works__all .work__desc p {
+  font-weight: bold;
+  font: 700 17px/23px Open Sans, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+/* line 128, ../sass/block/_works.scss */
+.works .works__all .work__desc h3 {
+  font: 400 13px Open Sans, Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 139, ../sass/block/_works.scss */
+  .works .works__all .work__desc {
+    height: 190px;
+  }
+}
+/* line 2, ../sass/block/_comments.scss */
+.reviews h2 {
+  color: #709dca;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+/* line 9, ../sass/block/_comments.scss */
+.reviews h2 + img {
+  float: none;
+  margin: 0 auto 75px;
+  text-align: center;
+  display: block;
+}
+/* line 17, ../sass/block/_comments.scss */
+.reviews .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
+  margin-bottom: 51px;
+}
+/* line 22, ../sass/block/_comments.scss */
+.reviews .owl-theme .owl-dots .owl-dot.active span,
+.reviews .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #709dca;
+}
+/* line 28, ../sass/block/_comments.scss */
+.reviews .comment {
+  padding: 25px;
+  font: italic 13px/23px Open Sans, Helvetica, Arial, sans-serif;
+  background-color: #f6f3f3;
+  color: #747474;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 37, ../sass/block/_comments.scss */
+.reviews .comment:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 31px;
+  border: 12px solid #f6f3f3;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+/* line 50, ../sass/block/_comments.scss */
+.reviews .comment__user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  font-size: 13px;
+}
+/* line 56, ../sass/block/_comments.scss */
+.reviews .comment__user span {
+  font-weight: 700;
+}
+/* line 60, ../sass/block/_comments.scss */
+.reviews .comment__user img {
+  width: 27px;
+  margin-right: 13px;
+}
+
+/* line 1, ../sass/block/_footer.scss */
+footer {
+  background-color: #273a43;
+  padding: 72px 0;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
+/* line 6, ../sass/block/_footer.scss */
+footer .row > div {
+  padding-left: 0;
+}
+/* line 10, ../sass/block/_footer.scss */
+footer h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* line 18, ../sass/block/_footer.scss */
+footer .footer__logo {
+  margin-bottom: 25px;
+}
+/* line 22, ../sass/block/_footer.scss */
+footer p,
+footer .tweet__content {
+  color: #c3c3c3;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
+/* line 33, ../sass/block/_footer.scss */
+footer .contacts p img {
+  width: 17px;
+  margin-right: 10px;
+}
+/* line 38, ../sass/block/_footer.scss */
+footer .contacts p a {
+  color: #fff;
+}
+/* line 45, ../sass/block/_footer.scss */
+footer .tweet img {
+  float: left;
+  margin-right: 13px;
+}
+/* line 50, ../sass/block/_footer.scss */
+footer .tweet .tweet__content {
+  overflow: hidden;
+}
+/* line 53, ../sass/block/_footer.scss */
+footer .tweet .tweet__content p {
+  color: #71b6d5;
+  font: 14px/23px Open Sans, Helvetica, Arial, sans-serif;
+}
+/* line 61, ../sass/block/_footer.scss */
+footer .subscribe {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 35px;
+}
+/* line 68, ../sass/block/_footer.scss */
+footer input {
+  width: calc(100% - 84px);
+  height: 100%;
+  background-color: #172227;
+  border-radius: 6px 0 0 6px;
+  color: #c3c3c3;
+  font-size: 14px;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 82, ../sass/block/_footer.scss */
+footer button {
+  width: 84px;
+  height: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #71b6d5;
+  border: none;
+  padding: 5px 0;
+  border-radius: 0 6px 6px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 100, ../sass/block/_footer.scss */
+.social {
+  background-color: #172227;
+  color: #c4c4c4;
+  font: 300 13px/18px Open Sans, Helvetica, Arial, sans-serif;
+  padding: 35px 0;
+}
+/* line 106, ../sass/block/_footer.scss */
+.social p {
+  margin: 0;
+}
+/* line 110, ../sass/block/_footer.scss */
+.social a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+/* line 120, ../sass/block/_footer.scss */
+.social a:hover {
+  background-color: #71b6d5;
+}
+
+@media only screen and (max-width: 769px) {
+  /* line 127, ../sass/block/_footer.scss */
+  footer {
+    padding: 50px 15px;
+  }
+  /* line 130, ../sass/block/_footer.scss */
+  footer .row > div {
+    margin-bottom: 30px;
+  }
+
+  /* line 135, ../sass/block/_footer.scss */
+  .social {
+    padding: 20px 15px;
+  }
+  /* line 138, ../sass/block/_footer.scss */
+  .social .row {
+    justify-content: center;
+    text-align: center;
+  }
+  /* line 143, ../sass/block/_footer.scss */
+  .social .row > * {
+    margin-bottom: 20px;
+  }
+  /* line 147, ../sass/block/_footer.scss */
+  .social .social__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
